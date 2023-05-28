@@ -29,8 +29,8 @@ const MenuItems = ({
         return "/editor";
       case 5:
         return "/draw";
-      case 6:
-        return "/play-game";
+      // case 6:
+      //   return "/play-game";
       default:
         return "/";
     }
@@ -44,8 +44,8 @@ const MenuItems = ({
         return "/editor";
       case 2:
         return "/draw";
-      case 3:
-        return "/play-game";
+      // case 3:
+      //   return "/play-game";
       default:
         return "/";
     }
@@ -64,8 +64,8 @@ const MenuItems = ({
             "My NFTs",
             "Stake",
             "Editor",
-            "Draw",
-            "Play Game",
+            "Draw"
+            // "Play Game",
           ].map((item, i) => (
             <li
               key={i}
@@ -85,7 +85,7 @@ const MenuItems = ({
               <Link href={generateLink(i)}>{item}</Link>
             </li>
           ))
-        : ["Explore NFTs", "Editor", "Draw", "Play Game"].map((item, i) => (
+        : ["Explore NFTs", "Editor", "Draw"].map((item, i) => (
             <li
               key={i}
               onClick={() => {
@@ -156,9 +156,9 @@ const checkActive = (active, setActive, router) => {
     case "/draw":
       if (active !== "Draw") setActive("Draw");
       break;
-    case "/play-game":
-      if (active !== "Play Game") setActive("Play Game");
-      break;
+    // case "/play-game":
+    //   if (active !== "Play Game") setActive("Play Game");
+    //   break;
     default:
       setActive("");
   }
