@@ -47,7 +47,7 @@ export const NFTProvider = ({ children }) => {
       setIsLoadingNFT(false);
 
       const provider = new ethers.providers.JsonRpcProvider(
-        `https://api.baobab.klaytn.net:8651`
+        `https://data-seed-prebsc-1-s1.binance.org:8545`
       );
       const contract = fetchContract(provider);
 

@@ -7,6 +7,7 @@ export default function Create() {
     <div className="w-full">
       <Head>
         <title>Draw NFT</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Editor />
     </div>

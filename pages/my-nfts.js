@@ -18,7 +18,7 @@ const MyNFTs = () => {
       setNfts(items);
       setNftsCopy(items);
       setIsLoading(false);
-    });
+    }).catch(err => console.log("error fetching nft", err));
   }, []);
 
   useEffect(() => {
