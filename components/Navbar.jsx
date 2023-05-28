@@ -196,15 +196,18 @@ const Navbar = () => {
             className="flexCenter md:hidden cursor-pointer"
             onClick={() => setActive("Explore NFTs")}
           >
+            
             <Image
               src={images.logo02}
-              objectFit="contain"
+              
+              style={{objectFit:"contain"}}
+              // objectFit="contain"
               width={32}
               height={32}
               alt="logo"
             />
             <p className=" dark:text-white text-nft-black-1 font-semibold text-lg ml-1">
-              NFTKastle
+              Solak
             </p>
           </div>
         </Link>
@@ -217,14 +220,14 @@ const Navbar = () => {
             }}
           >
             <Image
-              src={images.logo02}
+              src="https://res.cloudinary.com/daniel23/image/upload/v1683828134/oliver-paaske-66BgmIglPhM-unsplash_hmczm1.jpg"
               objectFit="contain"
               width={32}
               height={32}
               alt="logo"
             />
             <p className=" dark:text-white text-nft-black-1 font-semibold text-lg ml-1">
-              NFTKastle
+              Solak
             </p>
           </div>
         </Link>

@@ -2,9 +2,10 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    loader: "akamai",
-    path: "",
-    //domains: ["ipfs.infura.io", "nft-kastle.infura-ipfs.io"],
+    // loader: "akamai",
+    // path: "",
+    hostname: 'res.cloudinary.com',
+    domains: ["ipfs.infura.io", "nft-kastle.infura-ipfs.io", 'res.cloudinary.com'],
   },
   eslint: {
     // Warning: This allows production builds to successfully complete even if

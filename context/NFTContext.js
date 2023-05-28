@@ -11,7 +11,7 @@ const fetchContract = (signerOrProvider) =>
   new ethers.Contract(MarketAddress, MarketAddressABI, signerOrProvider);
 
 export const NFTProvider = ({ children }) => {
-  const nftCurrency = "KLAY";
+  const nftCurrency = "BNB";
   const [currentAccount, setCurrentAccount] = useState("");
   const [isLoadingNFT, setIsLoadingNFT] = useState(false);
   const [imageURL, setImageURL] = useState("");
@@ -145,11 +145,11 @@ export const NFTProvider = ({ children }) => {
 
     const transaction = !isReselling
       ? await contract.createToken(url, price, {
-          value: listingPrice.toString(),
-        })
+        value: listingPrice.toString(),
+      })
       : await contract.resellToken(id, price, {
-          value: listingPrice.toString(),
-        });
+        value: listingPrice.toString(),
+      });
 
     setIsLoadingNFT(true);
     await transaction.wait();

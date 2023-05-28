@@ -28,6 +28,7 @@
     "next": "latest",
     "next-themes": "0.1.1",
     "nprogress": "^0.2.0",
+    "prisma": "^4.14.1",
     "react": "18.1.0",
     "react-color": "^2.19.3",
     "react-confetti": "^6.1.0",

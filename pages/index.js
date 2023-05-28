@@ -107,7 +107,7 @@ const Home = () => {
   return (
     <div className="flex justify-center sm:px-4 p-12">
       <Head>
-        <title>Home | NFTKastle</title>
+        <title>Home | Solak</title>
       </Head>
       <div className="w-full minmd:w-4/5">
         <Banner
@@ -159,11 +159,12 @@ const Home = () => {
                       >
                         <Image
                           src={images.left}
-                          layout="fill"
-                          objectFit="contain"
+                          style={{ objectFit: "contain" }}
+                          // layout="fill"
+                          // objectFit="contain"
                           alt="left_arrow"
                           className={
-                            theme === "light" ? "filter invert" : undefined
+                            theme === "light" ? "filter invert object-contain fill-none" : undefined
                           }
                         />
                       </div>
@@ -173,8 +174,9 @@ const Home = () => {
                       >
                         <Image
                           src={images.right}
-                          layout="fill"
-                          objectFit="contain"
+                          style={{ objectFit: "contain" }}
+                          // layout="fill"
+                          // objectFit="contain"
                           alt="left_arrow"
                           className={
                             theme === "light" ? "filter invert" : undefined

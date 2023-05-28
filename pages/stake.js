@@ -146,7 +146,7 @@ const Stake = () => {
             className="text-nft-black-1 dark:text-nft-gray-2 border-nft-gray-1"
           >
             {fixed ? amount?.toFixed(9) : Number.parseFloat(amount).toFixed(3)}{" "}
-            KLAY
+            BNB
           </Text>
         </Box>
       </Flex>

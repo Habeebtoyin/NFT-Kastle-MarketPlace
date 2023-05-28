@@ -1,6 +1,6 @@
-# NFTKastle
+# Solak
 
-NFTKastle is an NFT marketplace where users can mint their pictures as NFTs, list their NFTs for sale, and buy NFTs from other users. NFTKastle has other addition features which includes
+Solak is an NFT marketplace where users can mint their pictures as NFTs, list their NFTs for sale, and buy NFTs from other users. Solak has other addition features which includes
 
 - Stake your NFTs and earn rewards.
 - Draw and mint the drawing as NFT.
@@ -29,14 +29,14 @@ NFTKastle is an NFT marketplace where users can mint their pictures as NFTs, lis
 
 # 🚀 Quick Start
 
-📄 Clone or fork NFTKastle:
+📄 Clone or fork Solak:
 
 https://github.com/barbarayler/NFT-Kastle-MarketPlace.git
 
 💿 Install all dependencies:
 
 ```
-$ cd NFTKastle
+$ cd Solak
 $ npm install
 ```
 

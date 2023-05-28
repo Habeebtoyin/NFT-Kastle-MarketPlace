@@ -170,7 +170,7 @@ export default function Home() {
                 />
                 <DescriptionCard
                   image="/graphics/check.png"
-                  description="Let NFTKastle sort it all out for you!"
+                  description="Let Solak sort it all out for you!"
                 />
               </div>
               <div className={styles.imageSelectorArea}>
@@ -194,9 +194,8 @@ export default function Home() {
           <div
             className={styles.presetsArea}
             style={{
-              display: `${
-                (presetBarVisible && isTablet) || !isTablet ? "block" : "none"
-              }`,
+              display: `${(presetBarVisible && isTablet) || !isTablet ? "block" : "none"
+                }`,
             }}
           >
             <Accordion defaultIndex={[0]} allowToggle>
@@ -212,8 +211,8 @@ export default function Home() {
                           isChecked={
                             activePreset.site
                               ? activePreset.site.toString() ==
-                                  Object.keys(site).toString() &&
-                                activePreset.name == param.name
+                              Object.keys(site).toString() &&
+                              activePreset.name == param.name
                               : false
                           }
                           onChange={(e) => {
@@ -339,7 +338,7 @@ export default function Home() {
                         if (canvasHeight > containerHeight) {
                           const maxCropperHeight = Math.round(
                             containerHeight /
-                              (canvasHeight / naturalImageHeight)
+                            (canvasHeight / naturalImageHeight)
                           );
                           if (value <= maxCropperHeight) {
                             if (activePreset.name) {
@@ -586,11 +585,11 @@ export default function Home() {
                   <CropScore
                     score={
                       Math.round((dragArea.width * 100) / activePreset.width) >
-                      100
+                        100
                         ? "100+"
                         : Math.round(
-                            (dragArea.width * 100) / activePreset.width
-                          )
+                          (dragArea.width * 100) / activePreset.width
+                        )
                     }
                     value={Math.round(
                       (dragArea.width * 100) / activePreset.width
@@ -621,11 +620,10 @@ export default function Home() {
                   position: "relative",
                   marginBottom: "20px",
                   margin: "0 auto 20px auto",
-                  display: `${
-                    dragArea.width == 0 || dragArea.height == 0
+                  display: `${dragArea.width == 0 || dragArea.height == 0
                       ? "none"
                       : "block"
-                  }`,
+                    }`,
                 }}
               ></div>
             </div>
@@ -637,8 +635,8 @@ export default function Home() {
                   {dragArea.width == 0 && dragArea.height == 0
                     ? "width and height"
                     : dragArea.width == 0
-                    ? "width"
-                    : "height"}
+                      ? "width"
+                      : "height"}
                   .
                 </p>
               </div>
