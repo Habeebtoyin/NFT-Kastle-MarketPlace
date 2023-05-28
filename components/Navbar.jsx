@@ -220,7 +220,7 @@ const Navbar = () => {
             }}
           >
             <Image
-              src="https://res.cloudinary.com/daniel23/image/upload/v1683828134/oliver-paaske-66BgmIglPhM-unsplash_hmczm1.jpg"
+              src={images.logo02}
               objectFit="contain"
               width={32}
               height={32}
